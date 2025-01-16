@@ -44,6 +44,7 @@ const ProjectCard = () => {
 
     return (
         <div className="project-card">
+            These are my projects
             <Carousel responsive={responsive}>
                 <div className="carousel-item">
                     <h3>Test Title</h3>

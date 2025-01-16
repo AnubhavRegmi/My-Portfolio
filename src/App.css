@@ -1,0 +1,323 @@
+/* Set the background color of the webpage */
+body {
+  background-image: url();
+  background-color: #151013;
+  /* A light gray background color for the webpage */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  /* Set a clean font for the webpage */
+}
+
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  scroll-behavior: smooth;
+}
+
+/* App container */
+.app-container {
+  font-family: 'Fira Code', monospace;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+  /* Allow content to overflow and be scrollable */
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+/* Spline Background */
+.spline-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Main Content */
+.main-content {
+  position: relative;
+  overflow-y: auto;
+  /* Enable vertical scrolling */
+  text-align: center;
+  color: white;
+  padding: 20px;
+  z-index: 1;
+  flex-grow: 1;
+  /* Allow content to fill available space */
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  padding-top: 56px;
+  /* Adjust to account for fixed navbar height */
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #c5bebe;
+  margin-left: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 4px 8px rgba(26, 23, 23, 0.2);
+  color: #a9ebf4;
+}
+
+.nav-link {
+  font-size: 1rem;
+  color: #f07720;
+  margin-left: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  transform: translateY(-0.1px) scale(1.1);
+  color: #a8de3b;
+}
+
+/* Active Link */
+.nav-link.active {
+  font-weight: bold;
+}
+
+.nav-link.active:hover {
+  font-weight: bold;
+  color: bisque;
+  transform: translateY(-0.1px) scale(1.1);
+}
+
+/* Navbar Toggler */
+.navbar-toggler {
+  border: none;
+  background-color: #333333;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Styling for the Name Box */
+.Anubhav {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.Anubhav h1 {
+  font-size: 3rem;
+  color: #c9dd41;
+  /* Orange color for the text */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  /* Light shadow effect on the text */
+}
+.description {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin-bottom: 20px;
+  width: 80%; /* Ensure it takes up the full available width */
+  line-height: 1.6; /* Adjust line height for better vertical spacing */
+}
+
+.description h3 {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #b0daf6;
+  text-align: center;
+}
+
+.description p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #fff;
+  text-align: center;
+}
+.section.education {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin-bottom: 30px;
+  width: 80%; /* Adjust to fit your layout */
+  max-width: 600px; /* Limit the width of the box */
+}
+
+.section.education h2 {
+  font-size: 2rem;
+  color: #f39c12;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.section.education p {
+  font-size: 1rem;
+  color: #f2e6e6;
+  line-height: 1.6;
+  margin: 0;
+}
+
+
+/* Flexbox layout for main content */
+.main-heading {
+  margin-top: 20px;
+  font-size: 2.5rem;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+
+.project-card {
+  padding: 20px;
+  background-color: #252525; /* Dark gray for visibility */
+  border-radius: 8px;
+  border: 1px solid #f39c12; /* Highlight the border for visibility */
+  color: white;
+}
+
+.carousel-item {
+  margin: 10px;
+  text-align: center;
+}
+
+.carousel-item h3 {
+  color: #f39c12; /* Orange for titles */
+  margin-bottom: 10px;
+}
+
+.carousel-item p {
+  color: #ddd; /* Light gray for description text */
+}
+
+
+/* Custom styling for the form container */
+.contact-form {
+  text-align: center;
+  background: linear-gradient(to right, #141a2a, #020305); /* Blue gradient background */
+  color: rgb(105, 216, 105);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Custom input styling */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover and focus effects for inputs */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #2563eb;
+  outline: none;
+  box-shadow: 0 0 5px rgba(37, 99, 235, 0.5);
+}
+
+/* Submit button styling */
+.contact-form button {
+  background: #d2462e;
+  color: white;
+  font-weight: bold;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+  background: #0f1423;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 15px;
+  }
+
+  .contact-form button {
+    width: 100%;
+  }
+}
+
+
+/* Allow for page scroll */
+.main-content {
+  flex-grow: 1;
+  overflow-y: auto;
+  /* Enable vertical scrolling */
+  padding-top: 20px;
+  padding-bottom: 80px;
+  /* Ensure there's space for the fixed footer */
+}
+
+/* Footer Styling */
+.footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  /* Ensure it appears above other content */
+  text-align: center;
+  padding: 1rem;
+  background-color: #2c3e50;
+  color: white;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+  height: 70px;
+  /* Define the height of your footer */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Ensure content inside the footer is centered */
+}
+
+.footer-link {
+  color: #f15111;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #30be6b;
+  transform: translateY(-2px);
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+  width: 100%;
+  /* Ensure the footer text stretches across */
+}

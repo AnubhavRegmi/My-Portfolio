@@ -24,10 +24,10 @@ const App = () => {
           </div>
           <p className="description">
             <h3>
-            A dedicated and passionate Computer Science student with knowledge in data structures and algorithms.
-            Known for excellent communication skills and problem-solving abilities. Eager to learn new programming
-            languages and technologies. Skilled in developing applications, debugging code, and creating projects.
-            Bringing analytical thinking and versatility to contribute to innovative software solutions.
+              A dedicated and passionate Computer Science student with knowledge in data structures and algorithms.
+              Known for excellent communication skills and problem-solving abilities. Eager to learn new programming
+              languages and technologies. Skilled in developing applications, debugging code, and creating projects.
+              Bringing analytical thinking and versatility to contribute to innovative software solutions.
             </h3>
           </p>
         </section>
@@ -42,22 +42,26 @@ const App = () => {
             <br />
             2021 - 2025
           </p>
-          
+
         </section>
 
         {/* Projects Section */}
         <section id="projects" className="section projects">
-          <h2>Projects</h2>
+          <h2>
+            Projects
+          </h2>
+
           <p>
             Here are some of the projects I have worked on:
           </p>
-        </section>
 
-        {/* Project Carousel Section */}  
-        <ProjectCard/>
+        </section>
+        {/* Project Carousel Section */}
+        <ProjectCard />
+
       </div>
       <div id="contact" className="contact-form">
-      <Contact/>
+        <Contact />
       </div>
       <Footer />
     </div>

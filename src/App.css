@@ -23,7 +23,7 @@ body {
 .app-container {
   font-family: 'Fira Code', monospace;
   margin: 0;
-  padding: 0;
+  padding-top: 70px;
   overflow: visible;
   /* Allow content to overflow and be scrollable */
   width: 100vw;

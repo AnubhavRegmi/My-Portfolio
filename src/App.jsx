@@ -8,7 +8,7 @@ import Contact from "./components/Contact";
 
 const App = () => {
   return (
-    <div className="app-container">
+    <div className="app-container" id="home">
       <Navbar />
 
       <div className="main-content">

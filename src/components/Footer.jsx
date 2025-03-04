@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="container">
         <p className="footer-text">
-          © 2025 My Portfolio | Built with React
+          © 2025 Anubhav's Portfolio | 318-614-1983
         </p>
         <p>
           <a

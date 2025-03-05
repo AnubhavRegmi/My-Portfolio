@@ -2,7 +2,6 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import "./App.css";
-import Spline from "@splinetool/react-spline";
 import ProjectCard from "./components/ProjectCard";
 import Contact from "./components/Contact";
 
@@ -12,10 +11,6 @@ const App = () => {
       <Navbar />
 
       <div className="main-content">
-        {/* Spline Background */}
-        <div className="spline-background">
-          <Spline scene="https://prod.spline.design/mjHizgbJh2C4Lpju/scene.splinecode" />
-        </div>
 
         {/* Personal Summary Section */}
         <section className="section personal-summary">

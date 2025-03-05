@@ -25,12 +25,18 @@ const responsive = {
 // Define inline styles
 const carouselItemStyles = {
     padding: '20px',
-    border: '1px solid #ddd',
+    border: '2px solid orange', /* Matches project box */
     borderRadius: '10px',
-    backgroundColor: '#f9f9f9',
+    backgroundColor: '#2C2C2C', /* Dark background */
     textAlign: 'center',
     margin: '10px',
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+    boxShadow: '0 4px 12px rgba(255, 111, 0, 0.3)',
+    height: '250px', /* Set height */
+    minWidth: '300px', /* Ensure width */
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center'
 };
 
 const titleStyles = {

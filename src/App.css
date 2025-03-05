@@ -1,8 +1,6 @@
 /* Set the background color of the webpage */
 body {
-  background-image: url();
   background-color: #151013;
-  /* A light gray background color for the webpage */
   margin: 0;
   font-family: Arial, sans-serif;
   /* Set a clean font for the webpage */
@@ -12,7 +10,7 @@ body {
 html,
 body {
   height: 100%;
-  margin: 0;
+
   display: flex;
   flex-direction: column;
   width: 100vw;
@@ -22,30 +20,19 @@ body {
 /* App container */
 .app-container {
   font-family: 'Fira Code', monospace;
-  margin: 0;
-  padding-top: 70px;
+  
   overflow: visible;
-  /* Allow content to overflow and be scrollable */
   width: 100vw;
   height: 100vh;
   position: relative;
 }
 
-/* Spline Background */
-.spline-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
 
 /* Main Content */
 .main-content {
   position: relative;
   overflow-y: auto;
-  /* Enable vertical scrolling */
+  background-color: #151013;
   text-align: center;
   color: white;
   padding: 20px;
@@ -96,15 +83,7 @@ body {
 }
 
 /* Active Link */
-.nav-link.active {
-  font-weight: bold;
-}
 
-.nav-link.active:hover {
-  font-weight: bold;
-  color: bisque;
-  transform: translateY(-0.1px) scale(1.1);
-}
 
 /* Navbar Toggler */
 .navbar-toggler {
@@ -116,82 +95,149 @@ body {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-/* Styling for the Name Box */
-.Anubhav {
-  display: inline-block;
-  background-color: rgba(255, 255, 255, 0.2);
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+.personal-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
   text-align: center;
-  margin-bottom: 20px;
+}
+
+/* Name Box */
+.Anubhav {
+  background: linear-gradient(135deg, rgba(44, 110, 138, 0.8), rgba(11, 47, 46, 0.7)); /* Gradient Background */
+  padding: 25px 50px;
+  border: #d2462e 5px solid;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(245, 9, 9, 0.4);
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.Anubhav:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
 
 .Anubhav h1 {
-  font-size: 3rem;
-  color: #c9dd41;
-  /* Orange color for the text */
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-  /* Light shadow effect on the text */
-}
-.description {
-  display: inline-block;
-  background-color: rgba(255, 255, 255, 0.2);
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  text-align: center;
-  margin-bottom: 20px;
-  width: 80%; /* Ensure it takes up the full available width */
-  line-height: 1.6; /* Adjust line height for better vertical spacing */
-}
-
-.description h3 {
-  margin-top: 10px;
-  font-size: 1rem;
-  color: #b0daf6;
-  text-align: center;
-}
-
-.description p {
-  margin-top: 10px;
-  font-size: 1rem;
+  font-size: 3.2rem;
   color: #fff;
-  text-align: center;
+  font-weight: bold;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
 }
-.section.education {
-  display: inline-block;
-  background-color: rgba(255, 255, 255, 0.2);
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+
+.description {
+  background: linear-gradient(135deg, rgba(44, 110, 138, 0.8), rgba(11, 47, 46, 0.7)); /* Smooth Gradient */
+  padding: 30px 40px; /* Balanced padding */
+  border-radius: 15px;
+  backdrop-filter: blur(10px); /* Subtle blur for glassmorphism */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); /* Softer shadow */
   text-align: center;
-  margin-bottom: 30px;
-  width: 80%; /* Adjust to fit your layout */
-  max-width: 600px; /* Limit the width of the box */
+  width: 90%;
+  max-width: 850px;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #ffffff;
+  margin-top: 40px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  font-family: 'Poppins', sans-serif; /* Modern font */
+}
+
+/* Hover Effect */
+.description:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Heading Inside Description */
+.description h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #faf9f5; /* Gold Highlight */
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Text Inside Description */
+.description p {
+  font-size: 1.1rem;
+  color: #f1f1f1;
+  margin-top: 10px;
+  text-align: center;
+  font-weight: 300;
+}
+
+
+.section.education {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05));
+  padding: 30px;
+  border: 5px solid #56c118;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(114, 235, 44, 0.4);
+  text-align: center;
+  width: 80%;
+  max-width: 600px;
+  margin: -30px auto 20px auto; /* Moves it up */
+  transition: transform 0.3s ease-in-out;
+}
+
+.section.education:hover {
+  transform: translateY(-5px);
 }
 
 .section.education h2 {
   font-size: 2rem;
   color: #f39c12;
-  margin-bottom: 15px;
-  text-align: center;
+  font-weight: bold;
 }
-
 .section.education p {
   font-size: 1rem;
   color: #f2e6e6;
   line-height: 1.6;
-  margin: 0;
 }
 
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px 20px;
+  margin: 80px auto;
+  width: 85%;
+  max-width: 1000px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1); /* Light transparency for contrast */
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(245, 153, 24, 0.4);
+  transition: transform 0.3s ease-in-out;
+  border: 5px solid orange;
+  
+}
 
-/* Flexbox layout for main content */
-.main-heading {
-  margin-top: 20px;
+.projects:hover {
+  transform: translateY(-5px);
+}
+
+/* Heading */
+.projects h2 {
   font-size: 2.5rem;
-  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+  color: #ffcc00; /* Golden color */
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+  margin-bottom: 15px;
 }
+
+/* Project description */
+.projects p {
+  font-size: 1.2rem;
+  color: #f5f0f0;
+  max-width: 800px;
+  line-height: 1.6;
+}
+
 
 .project-card {
   padding: 20px;
@@ -223,7 +269,7 @@ body {
   color: rgb(105, 216, 105);
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 20px rgba(245, 9, 9, 0.4);
 }
 
 /* Custom input styling */

@@ -42,6 +42,9 @@ const App = () => {
         </section>
 
         {/* Projects Section */}
+        <div className="box">
+
+        
         <section id="projects" className="section projects">
           <h2>
             Projects
@@ -54,7 +57,7 @@ const App = () => {
         </section>
         {/* Project Carousel Section */}
         <ProjectCard />
-
+        </div>
       </div>
       <div id="contact" className="contact-form">
         <Contact />

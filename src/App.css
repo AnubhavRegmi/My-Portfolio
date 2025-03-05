@@ -131,12 +131,13 @@ body {
 .description {
   background: linear-gradient(135deg, rgba(44, 110, 138, 0.8), rgba(11, 47, 46, 0.7)); /* Smooth Gradient */
   padding: 30px 40px; /* Balanced padding */
+  border: 5px solid #1b22a2; /* Blue border */  
   border-radius: 15px;
-  backdrop-filter: blur(10px); /* Subtle blur for glassmorphism */
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); /* Softer shadow */
+  box-shadow: 0 8px 20px rgba(65, 71, 186, 0.4);
+  backdrop-filter: blur(10px); /* Subtle blur for glassmorphism */ 
   text-align: center;
   width: 90%;
-  max-width: 850px;
+  max-width: 100%;
   font-size: 1.2rem;
   line-height: 1.8;
   color: #ffffff;
@@ -204,16 +205,16 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 20px 20px;
-  margin: 80px auto;
+  padding: 10px 10px;
+  margin: 10px auto;
   width: 85%;
   max-width: 1000px;
   border-radius: 15px;
-  background: rgba(255, 255, 255, 0.1); /* Light transparency for contrast */
+  background: rgba(150, 128, 46, 0.1); /* Light transparency for contrast */
   backdrop-filter: blur(10px);
   box-shadow: 0 8px 20px rgba(245, 153, 24, 0.4);
   transition: transform 0.3s ease-in-out;
-  border: 5px solid orange;
+  
   
 }
 
@@ -225,7 +226,7 @@ body {
 .projects h2 {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #ffcc00; /* Golden color */
+  color: #e35f27; /* Golden color */
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
   margin-bottom: 15px;
 }
@@ -233,17 +234,25 @@ body {
 /* Project description */
 .projects p {
   font-size: 1.2rem;
-  color: #f5f0f0;
+  color: #f9f5f5;
   max-width: 800px;
   line-height: 1.6;
 }
 
+.box {
+  border: #020305 5px solid;
+  padding: 10px 50px;
+  box-shadow: 0 8px 20px rgba(80, 47, 27, 0.4);
+  transition: transform 0.3s ease-in-out;
+  margin-top: 50px;
+}
 
 .project-card {
   padding: 20px;
-  background-color: #252525; /* Dark gray for visibility */
+  background-color: #cab932; 
   border-radius: 8px;
-  border: 1px solid #f39c12; /* Highlight the border for visibility */
+  box-shadow: 0 8px 20px rgba(199, 84, 13, 0.4);
+  margin-top: 30px;
   color: white;
 }
 
